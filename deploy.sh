@@ -6,4 +6,4 @@ set -e
 # 提交源项目代码到gitbub
 git add -A
 git commit -m "更新文档"
-git push origin master
+git push -f origin master
