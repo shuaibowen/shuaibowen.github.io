@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-# ç¡®ä¿è„šæœ¬æŠ›å‡ºé‡åˆ°çš„é”™è¯¯
+# È·±£½Å±¾Å×³öÓöµ½µÄ´íÎó
 set -e
 
-# æäº¤æºé¡¹ç›®ä»£ç åˆ°gitbub
+# Ìá½»Ô´ÏîÄ¿´úÂëµ½gitbub
 git add -A
-git commit -m "æ›´æ–°æ–‡æ¡£"
+git commit -m "¸üĞÂÎÄµµ"
 git push origin master
