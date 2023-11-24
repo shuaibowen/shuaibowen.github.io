@@ -17,7 +17,7 @@ export default hopeTheme({
   },
 
   // 可以使用多图标源、但在使用时需要 标明前缀
-  iconAssets: ["fontawesome-with-brands"],
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/headImage.png",
 
@@ -60,10 +60,17 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
-    comment: {
-      // You should generate and use your own comment service
-      provider: "Waline",
-      serverURL: "https://waline-comment.vuejs.press",
+    // comment: {
+    //   // You should generate and use your own comment service
+    //   provider: "Waline",
+    //   serverURL: "https://waline-comment.vuejs.press",
+    // },
+
+    components: {
+      // 你想使用的组件
+      components: [
+        "Badge",
+      ],
     },
 
     // all features are enabled for demo, only preserve features you need here
@@ -77,7 +84,10 @@ export default hopeTheme({
       figure: true,
       flowchart: true,
       gfm: true,
+      // 懒加载
       imgLazyload: true,
+      // 启用图片标记
+      imgMark: true,
       imgSize: true,
       include: true,
       katex: true,
